@@ -17,6 +17,6 @@
   },
   "homepage": "<%= url %>#readme",
   "dependencies": {
-    "rsx-common": "^0.1.1"
+    "rsx-common": "^0.1.3"
   }
 }
