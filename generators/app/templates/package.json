@@ -1,14 +1,14 @@
 {
-  "name": "rsx-plugin-<%= name %>",
-  "version": "0.0.1",
+  "name": "rsx-plugin-<%= command %>",
+  "version": "<%= version %>",
   "description": "<%= description %>",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "eslint index.js src/ tests/ && istanbul cover _mocha --recursive tests/"
   },
   "repository": {
     "type": "git",
-    "url": "<%= url %>.git"
+    "url": "git+<%= url %>.git"
   },
   "author": "<%= authorName %> <<%= authorEmail %>>",
   "license": "MIT",
@@ -17,6 +17,15 @@
   },
   "homepage": "<%= url %>#readme",
   "dependencies": {
-    "rsx-common": "^0.1.3"
+    "rsx-common": "^0.1.8"
+  },
+  "devDependencies": {
+    "babel-eslint": "^4.1.5",
+    "chai": "^3.5.0",
+    "eslint": "^1.10.0",
+    "istanbul": "^0.4.3",
+    "mocha": "^2.4.5",
+    "rewire": "^2.5.1",
+    "sinon": "^1.17.4"
   }
 }

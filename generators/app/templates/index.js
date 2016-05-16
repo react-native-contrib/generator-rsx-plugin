@@ -1,5 +1,7 @@
+'use strict';
+
 module.exports = [{
-  func: require('./src/<%= name %>'),
+  func: require('./src/<%= command %>'),
   description: '<%= description %>',
-  name: '<%= name %>',
+  name: '<%= command %>',
 }];
