@@ -23,7 +23,7 @@
     "yosay": "^1.0.2"
   },
   "devDependencies": {
-    "babel-eslint": "^4.1.5",
+    "babel-eslint": "^6.0.4",
     "eslint": "^2.1.0",
     "eslint-config-xo-space": "^0.12.0",
     "gulp": "^3.9.0",
