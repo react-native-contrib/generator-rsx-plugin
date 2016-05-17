@@ -3,7 +3,8 @@
   "env": {
     "browser": true,
     "node": true,
-    "jasmine": true
+    "mocha": true,
+    "es6": true
   },
   "ecmaFeatures": {
     "arrowFunctions": true,
@@ -13,7 +14,7 @@
     "destructuring": true,
     "forOf": true,
     "generators": false,
-    "modules": true,
+    // "modules": true,
     "objectLiteralComputedProperties": true,
     "objectLiteralDuplicateProperties": false,
     "objectLiteralShorthandMethods": true,
@@ -29,7 +30,7 @@
  */
     // babel inserts "use strict"; for us
     // http://eslint.org/docs/rules/strict
-    // "strict": [2, "never"],
+    // "strict": [2, "global"],
 
 /**
  * ES6
@@ -135,7 +136,7 @@
     }],
     "comma-style": [2, "last"],      // http://eslint.org/docs/rules/comma-style
     "eol-last": 2,                   // http://eslint.org/docs/rules/eol-last
-    "func-names": 1,                 // http://eslint.org/docs/rules/func-names
+    // "func-names": 1,                 // http://eslint.org/docs/rules/func-names
     "key-spacing": [2, {             // http://eslint.org/docs/rules/key-spacing
         "beforeColon": false,
         "afterColon": true

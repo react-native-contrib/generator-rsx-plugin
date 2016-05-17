@@ -1,2 +1,4 @@
+.DS_*
+*.log
 node_modules
 coverage

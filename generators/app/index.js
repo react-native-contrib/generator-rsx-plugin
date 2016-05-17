@@ -5,11 +5,11 @@ var yosay = require('yosay');
 
 module.exports = yeoman.Base.extend({
 
-    initializing: function () {
+    initializing: function() {
         this.pkg = this.fs.readJSON(this.destinationPath('package.json'), {});
     },
 
-    prompting: function () {
+    prompting: function() {
         var done = this.async();
 
         // Have Yeoman greet the user.
@@ -18,38 +18,38 @@ module.exports = yeoman.Base.extend({
         ));
 
         var prompts = [{
-            type    : 'input',
-            name    : 'name',
-            message : 'Plugin name (For example, rsx-plugin-run)',
-            default : this.appname.replace(new RegExp(/\s/g), '-') // Default to current folder name
-        },{
-            type    : 'input',
-            name    : 'description',
-            message : 'Plugin description',
-            default : this.pkg.description || '',
-        },{
-            type    : 'input',
-            name    : 'version',
-            message : 'Plugin version',
-            default : this.pkg.version || '',
-        },{
-            type    : 'input',
-            name    : 'url',
-            message : 'Repository URL',
-            default : this.pkg.repository.url.replace(new RegExp(/^(git\+)|(\.git)/g), '') || '',
-        },{
-            type    : 'input',
-            name    : 'authorName',
-            message : 'Author name',
+            type: 'input',
+            name: 'name',
+            message: 'Plugin name (For example, rsx-plugin-run)',
+            default: this.appname.replace(new RegExp(/\s/g), '-'), // Default to current folder name
+        }, {
+            type: 'input',
+            name: 'description',
+            message: 'Plugin description',
+            default: this.pkg.description || '',
+        }, {
+            type: 'input',
+            name: 'version',
+            message: 'Plugin version',
+            default: this.pkg.version || '0.1.0',
+        }, {
+            type: 'input',
+            name: 'url',
+            message: 'Repository URL',
+            default: this.pkg.repository ? this.pkg.repository.url.replace(new RegExp(/^(git\+)|(\.git)/g), '') : '',
+        }, {
+            type: 'input',
+            name: 'authorName',
+            message: 'Author name',
             default: this.user.git.name(),
-        },{
-            type    : 'input',
-            name    : 'authorEmail',
-            message : 'Author email',
+        }, {
+            type: 'input',
+            name: 'authorEmail',
+            message: 'Author email',
             default: this.user.git.email(),
         }];
 
-        this.prompt(prompts, function (props) {
+        this.prompt(prompts, function(props) {
             this.props = props;
             // Get the name of the command
             this.props.command = this.props.name.split('-').pop();
@@ -57,7 +57,7 @@ module.exports = yeoman.Base.extend({
         }.bind(this));
     },
 
-    writing: function () {
+    writing: function() {
         this.fs.copy(
             this.templatePath('.*'),
             this.destinationPath(this.destinationRoot())
@@ -84,7 +84,7 @@ module.exports = yeoman.Base.extend({
         );
     },
 
-    install: function () {
+    install: function() {
         // this.installDependencies();
-    }
+    },
 });
