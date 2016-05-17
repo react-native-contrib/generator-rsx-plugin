@@ -1,5 +1,15 @@
-# generator-rsx-plugin [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url]
-> Boilerplate project for a plugin for the RSX CLI utility
+# generator-rsx-plugin
+
+[![npm version][ico-npm]][link-npm]
+[![License][ico-license]](LICENSE.md)
+[![Travis CI][ico-travis]][link-travis]
+[![Code Climate][ico-codeclimate]][link-codeclimate]
+[![Code Coverage][ico-code-coverage]][link-code-coverage]
+[![Dependencies][ico-dependencies]][link-dependencies]
+
+---
+
+Yeoman generator for a plugin for the RSX CLI utility.
 
 ## Installation
 
@@ -28,9 +38,15 @@ yo rsx-plugin
 MIT © [Hassan Khan](http://hassankhan.me)
 
 
-[npm-image]: https://badge.fury.io/js/generator-rsx-plugin.svg
-[npm-url]: https://npmjs.org/package/generator-rsx-plugin
-[travis-image]: https://travis-ci.org/react-native-contrib/generator-rsx-plugin.svg?branch=master
-[travis-url]: https://travis-ci.org/react-native-contrib/generator-rsx-plugin
-[daviddm-image]: https://david-dm.org/react-native-contrib/generator-rsx-plugin.svg?theme=shields.io
-[daviddm-url]: https://david-dm.org/react-native-contrib/generator-rsx-plugin
+[ico-npm]: https://img.shields.io/npm/v/generator-rsx-plugin.svg?style=flat-square
+[ico-license]: https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square
+[ico-travis]: https://img.shields.io/travis/react-native-contrib/generator-rsx-plugin/master.svg?style=flat-square
+[ico-codeclimate]: https://img.shields.io/codeclimate/github/react-native-contrib/generator-rsx-plugin.svg?style=flat-square
+[ico-code-coverage]: https://img.shields.io/codeclimate/coverage/github/react-native-contrib/generator-rsx-plugin.svg?style=flat-square
+[ico-dependencies]: https://img.shields.io/david/react-native-contrib/generator-rsx-plugin.svg?style=flat-square
+
+[link-npm]: https://www.npmjs.com/package/generator-rsx-plugin
+[link-travis]: https://travis-ci.org/react-native-contrib/generator-rsx-plugin
+[link-codeclimate]: https://codeclimate.com/github/react-native-contrib/generator-rsx-plugin
+[link-code-coverage]: https://codeclimate.com/github/react-native-contrib/generator-rsx-plugin/coverage
+[link-dependencies]: https://david-dm.org/react-native-contrib/generator-rsx-plugin
